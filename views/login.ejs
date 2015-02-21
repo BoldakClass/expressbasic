@@ -1,0 +1,22 @@
+
+<% var title = 'echo-server simple example for the lecture' %>
+<% include head %>
+
+<h1>express stuff</h1>
+<%- message %>
+<form method="post" action="/login">
+  <p>
+    <label>user:</label>
+    <input type="text" name="username">
+  </p>
+  <p>
+    <label>pass:</label>
+    <input type="text" name="password">
+  </p>
+  <p>
+    <input type="submit" value="proceed">
+  </p>
+
+</form>
+<%- userInfo %>
+<% include foot %>
